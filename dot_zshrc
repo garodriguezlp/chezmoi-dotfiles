@@ -53,7 +53,6 @@ zstyle ':z4h:ssh:*' send-extra-files '~/.nanorc' '~/.env.zsh'
 # example. If you don't plan to use Oh My Zsh, delete this line.
 z4h install ohmyzsh/ohmyzsh || return
 z4h install garodriguezlp/dotfiles@main || return
-z4h install MohamedElashri/exa-zsh@main || return
 
 # Install or update core components (fzf, zsh-autosuggestions, etc.) and
 # initialize Zsh. After this point console I/O is unavailable until Zsh
@@ -74,16 +73,15 @@ z4h source ~/.env.zsh
 z4h source ohmyzsh/ohmyzsh/lib/git.zsh
 
 # Use additional Git repositories pulled in with `z4h install`.
-z4h load   ohmyzsh/ohmyzsh/plugins/autojump
+z4h load   ohmyzsh/ohmyzsh/plugins/zoxide
 z4h load   ohmyzsh/ohmyzsh/plugins/git
 z4h load   ohmyzsh/ohmyzsh/plugins/gitignore
 z4h load   ohmyzsh/ohmyzsh/plugins/httpie
 z4h load   ohmyzsh/ohmyzsh/plugins/sdk
 z4h load   ohmyzsh/ohmyzsh/plugins/chruby
+z4h load   ohmyzsh/ohmyzsh/plugins/eza
 
 z4h load   -c garodriguezlp/dotfiles/plugins/key-bindings
-
-z4h source MohamedElashri/exa-zsh/exa-zsh.plugin.zsh
 
 if [[ -d ~/.zsh_functions ]]; then
   z4h source -c ~/.zsh_functions/*.zsh
