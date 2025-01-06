@@ -1,0 +1,10 @@
+[default]
+sso_session = default
+sso_account_id = 590183842175
+sso_role_name = AdministratorAccess
+region = us-east-1
+output = json
+[sso-session default]
+sso_start_url = https://d-9067c177a4.awsapps.com/start/#
+sso_region = us-east-1
+sso_registration_scopes = sso:account:access
