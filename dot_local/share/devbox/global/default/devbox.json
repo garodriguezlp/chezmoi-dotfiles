@@ -24,7 +24,8 @@
     "yq@latest",
     "zoxide@latest",
     "zsh@latest",
-    "chezmoi@latest"
+    "chezmoi@latest",
+    "git-credential-manager@latest"
   ],
   "shell": {
     "init_hook": [
