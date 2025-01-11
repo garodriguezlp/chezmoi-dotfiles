@@ -128,3 +128,5 @@ fi
 if [[ -d $HOME/.zsh_completions ]]; then
   fpath=($HOME/.zsh_completions $fpath)
 fi
+
+eval "$(devbox global shellenv)"
