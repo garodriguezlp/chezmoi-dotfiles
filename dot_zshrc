@@ -1,3 +1,4 @@
+eval "$(devbox global shellenv)"
 # Personal Zsh configuration file. It is strongly recommended to keep all
 # shell customization and configuration (including exported environment
 # variables such as PATH) in this file or in files sourced from it.
@@ -128,5 +129,3 @@ fi
 if [[ -d $HOME/.zsh_completions ]]; then
   fpath=($HOME/.zsh_completions $fpath)
 fi
-
-eval "$(devbox global shellenv)"
