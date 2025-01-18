@@ -1,9 +1,10 @@
-eval "$(devbox global shellenv)"
 # Personal Zsh configuration file. It is strongly recommended to keep all
 # shell customization and configuration (including exported environment
 # variables such as PATH) in this file or in files sourced from it.
 #
 # Documentation: https://github.com/romkatv/zsh4humans/blob/v5/README.md.
+
+eval "$(devbox global shellenv)"
 
 # Periodic auto-update on Zsh startup: 'ask' or 'no'.
 # You can manually run `z4h update` to update everything.
@@ -12,7 +13,7 @@ zstyle ':z4h:' auto-update      'no'
 zstyle ':z4h:' auto-update-days '28'
 
 # Keyboard type: 'mac' or 'pc'.
-zstyle ':z4h:bindkey' keyboard  'mac'
+zstyle ':z4h:bindkey' keyboard  'pc'
 
 # Start tmux if not already in tmux.
 zstyle ':z4h:' start-tmux command tmux -u new
@@ -81,6 +82,7 @@ z4h load   ohmyzsh/ohmyzsh/plugins/httpie
 z4h load   ohmyzsh/ohmyzsh/plugins/sdk
 z4h load   ohmyzsh/ohmyzsh/plugins/chruby
 z4h load   ohmyzsh/ohmyzsh/plugins/eza
+z4h load   ohmyzsh/ohmyzsh/plugins/direnv
 
 z4h load   -c garodriguezlp/dotfiles/plugins/key-bindings
 
