@@ -25,7 +25,8 @@
     "zoxide@latest",
     "zsh@latest",
     "chezmoi@latest",
-    "git-credential-manager@latest"
+    "git-credential-manager@latest",
+    "jreleaser-cli@latest"
   ],
   "shell": {
     "init_hook": [
