@@ -6,3 +6,9 @@
 [credential]
 	helper = manager
 	credentialStore = plaintext
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/garodriguezlp/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/garodriguezlp/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/gh auth git-credential
