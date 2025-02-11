@@ -28,7 +28,8 @@
     "git-credential-manager@latest",
     "jreleaser-cli@latest",
     "lastpass-cli@latest",
-    "direnv@latest"
+    "direnv@latest",
+    "_1password@latest"
   ],
   "shell": {
     "init_hook": [
